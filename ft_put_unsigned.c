@@ -36,6 +36,11 @@ static void	write_unsigned(unsigned int nb)
 
 int	ft_put_unsigned(unsigned int nb)
 {
+	if (nb == 0)
+	{
+		ft_putchar('0');
+		return (1);
+	}
 	write_unsigned(nb);
 	return (unsigned_count(nb));
 }

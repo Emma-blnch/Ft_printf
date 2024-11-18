@@ -17,6 +17,8 @@ static size_t	hexa_digits(unsigned int n)
 	size_t	count;
 
 	count = 0;
+	if (n == 0)
+		return (1);
 	while (n != 0)
 	{
 		count++;
@@ -51,9 +53,8 @@ int	ft_put_hexa(unsigned int nbr, const char format)
 	if (nbr == 0)
 	{
 		write(1, "0", 1);
-		return (0);
+		return (1);
 	}
-	else
-		write_hexa(nbr, format);
+	write_hexa(nbr, format);
 	return (hexa_digits(nbr));
 }

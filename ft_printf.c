@@ -15,6 +15,7 @@
 int	ft_check_format(va_list args, char c)
 {
 	int	len;
+	unsigned int	nbr;
 
 	len = 0;
 	if (c == 's')
@@ -28,7 +29,10 @@ int	ft_check_format(va_list args, char c)
 	else if (c == 'p')
 		len += ft_putptr(va_arg(args, void *));
 	else if (c == 'x' || c == 'X')
-		len += ft_put_hexa(va_arg(args, unsigned int), c);
+	{
+		nbr = va_args(args, unsigned int);
+		len += ft_put_hexa(nbr, c);
+	}
 	else if (c == '%')
 		len += ft_putchar('%');
 	return (len);
