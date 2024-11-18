@@ -1,25 +1,25 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: eblancha <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/18 15:40:02 by eblancha          #+#    #+#             */
+/*   Updated: 2024/11/18 15:45:48 by eblancha         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
-void ft_putnbr(int n)
+int	ft_putnbr(int n)
 {
-    if (n == -2147483648)
-    {
-        write(1, "-2147483648", 11);
-        return;
-    }
-    if (n == 0)
-    {
-        write(1, "0", 1);
-        return;
-    }
-    if (n < 0)
-    {
-        write(1, "-", 1);
-        n = -n;
-    }
-    if (n >= 10)
-    {
-        ft_putnbr(n / 10);
-    }
-    ft_putchar((n % 10) + 48);
+	int		count;
+	char	*nb;
+
+	count = 0;
+	nb = ft_itoa(n);
+	count = ft_putstr(nb);
+	free(nb);
+	return (count);
 }

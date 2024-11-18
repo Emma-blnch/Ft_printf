@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_put_unsigned.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: eblancha <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/18 15:18:29 by eblancha          #+#    #+#             */
+/*   Updated: 2024/11/18 15:19:39 by eblancha         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
 static size_t	unsigned_count(unsigned int n)
@@ -8,7 +20,7 @@ static size_t	unsigned_count(unsigned int n)
 	if (n == 0)
 		return (1);
 	while (n != 0)
-    	{
+	{
 		count++;
 		n /= 10;
 	}
