@@ -6,7 +6,7 @@
 /*   By: eblancha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 15:10:40 by eblancha          #+#    #+#             */
-/*   Updated: 2024/11/18 15:32:00 by eblancha         ###   ########.fr       */
+/*   Updated: 2024/11/19 10:42:07 by eblancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_check_format(va_list args, char c)
 {
-	int	len;
 	unsigned int	nbr;
+	int				len;
 
 	len = 0;
 	if (c == 's')
