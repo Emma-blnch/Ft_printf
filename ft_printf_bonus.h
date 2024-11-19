@@ -6,7 +6,7 @@
 /*   By: eblancha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 10:54:53 by eblancha          #+#    #+#             */
-/*   Updated: 2024/11/19 12:34:30 by eblancha         ###   ########.fr       */
+/*   Updated: 2024/11/19 14:25:52 by eblancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,14 +34,14 @@ int		ft_putstr(char *s);
 char	*ft_itoa(int n);
 
 typedef struct s_flags {
-	int	minus;	//flag '-'
-	int	zero;	//flag '0'
-	int	hash;	//flag '#'
-	int	plus;	//flag '+'
-	int	space;	//flag ' '
-	int	width;	//largeur min
+	int	minus;
+	int	zero;
+	int	hash;
+	int	plus;
+	int	space;
+	int	width;
 	int	precision;
-	int	dot;	//'.'
+	int	dot;
 }	t_flags;
 
 #endif

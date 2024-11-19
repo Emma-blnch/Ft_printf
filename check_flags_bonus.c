@@ -6,11 +6,11 @@
 /*   By: eblancha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 10:53:18 by eblancha          #+#    #+#             */
-/*   Updated: 2024/11/19 12:33:41 by eblancha         ###   ########.fr       */
+/*   Updated: 2024/11/19 14:28:27 by eblancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
 static t_flags	init_flags(void)
 {
