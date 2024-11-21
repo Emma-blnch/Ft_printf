@@ -1,3 +1,4 @@
-# 💻 **Ft_printf**
+                                                        # 💻 **Ft_printf**
 ***
-## **About the project**
+## 🏷️ **About the project**
+> Because ft_putnbr() and ft_putstr() aren’t enough
