@@ -29,9 +29,9 @@ You can still see part of my code for the bonus, it can give you hints on how to
 
 ## 🧠 **New notions**
 <p>If you have trouble understanding the subject fully and the new notions like variadic functions (`va_arg`, `va_list`, `va_start` and `va_end`), I highly recommand these:</p>
+
 - https://42-cursus.gitbook.io/guide/rank-01/ft_printf
 - https://www.youtube.com/watch?v=Hb2m7htiKWM
-
 
 It really helped me understand the subject better and the new notions.
 
