@@ -21,13 +21,15 @@ What to do for the bonus part:
 > - Manage any combination of the following flags: ’-0.’ and the field minimum width under all conversions.
 > - Manage all the following flags: ’# +’ (Yes, one of them is a space)
 
-I started to do the bonus when my madatory part worked perfectly which is a BIG mistake. As stated in the subject :
+I started to do the bonus when my madatory part worked perfectly which is a **BIG** mistake. As stated in the subject :
 > If you plan to complete the bonus part, think about the implementation of your extra features from the start. This way, you will avoid the pitfalls of a naive approach.
 
 Doing the bonus meant re-doing all my functions so I gave up.
 You can still see part of my code for the bonus, it can give you hints on how to do it. Just check `ft_check_flags_bonus.c`.
 
-## 🧠 **My logic**
+## 🧠 **New notions**
+If you have trouble understanding the subject fully and the new notions like variadic functions (`va_arg`, `va_list`, `va_start` and `va_end`), I highly recommand these:
+- 
 
 ## ♻️ **Testing**
 I strongly recommand you do your own main function to test your program. *You can check mine to see what it should look like*
