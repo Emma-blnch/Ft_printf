@@ -1,7 +1,7 @@
 <h1 align="center"> 💻 <strong>Ft_printf</strong> </h1>
 
 ## 🏷️ **About the project**
-> Because ft_putnbr() and ft_putstr() aren’t enough <
+> Because ft_putnbr() and ft_putstr() aren’t enough
 This project is about recoding a simplified version of the printf function.
 
 ## ⚙️ **Requirements**
