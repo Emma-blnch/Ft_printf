@@ -6,12 +6,13 @@
 /*   By: eblancha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 10:53:18 by eblancha          #+#    #+#             */
-/*   Updated: 2024/11/19 14:28:27 by eblancha         ###   ########.fr       */
+/*   Updated: 2024/11/21 11:59:54 by eblancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
+// initialize all flags to 0 to avoid mistakes
 static t_flags	init_flags(void)
 {
 	t_flags	flags;
@@ -27,6 +28,7 @@ static t_flags	init_flags(void)
 	return (flags);
 }
 
+// parse the argument in printf to check for flags
 static int	parse_basic_flags(const char *format, t_flags *flags)
 {
 	int	i;
@@ -49,6 +51,7 @@ static int	parse_basic_flags(const char *format, t_flags *flags)
 	return (i);
 }
 
+// check the width if there is one in argument
 static int	parse_width(const char *format, t_flags *flags)
 {
 	int	i;
@@ -72,6 +75,7 @@ static int	parse_width(const char *format, t_flags *flags)
 	return (i);
 }
 
+// check precision if there is one in argument
 static int	parse_precision(const char *format, t_flags *flags, va_list args)
 {
 	int	i;
@@ -94,6 +98,7 @@ static int	parse_precision(const char *format, t_flags *flags, va_list args)
 	return (i);
 }
 
+// check for the flags
 int	parse_flags(const char *format, t_flags *flags, va_list args)
 {
 	int	i;

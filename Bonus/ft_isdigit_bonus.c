@@ -6,12 +6,13 @@
 /*   By: eblancha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 09:08:05 by eblancha          #+#    #+#             */
-/*   Updated: 2024/11/19 14:27:38 by eblancha         ###   ########.fr       */
+/*   Updated: 2024/11/21 12:00:14 by eblancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
+// function to check if the int recived is a digit
 int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')

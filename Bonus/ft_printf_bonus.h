@@ -6,7 +6,7 @@
 /*   By: eblancha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 10:54:53 by eblancha          #+#    #+#             */
-/*   Updated: 2024/11/19 14:25:52 by eblancha         ###   ########.fr       */
+/*   Updated: 2024/11/21 12:01:59 by eblancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ int		ft_putnbr(int n);
 int		ft_putstr(char *s);
 char	*ft_itoa(int n);
 
+// added a struct containing all the possible flags
 typedef struct s_flags {
 	int	minus;
 	int	zero;
