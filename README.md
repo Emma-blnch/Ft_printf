@@ -2,6 +2,7 @@
 
 ## 🏷️ **About the project**
 > Because ft_putnbr() and ft_putstr() aren’t enough
+
 This project is about recoding a simplified version of the printf function.
 
 ## ⚙️ **Requirements**
@@ -11,7 +12,8 @@ The function must be written in C. It must compile with clang and the following 
 - [x] -Werror
 
 ## ➡️ **Difference with the original printf**
-> Don't implement the buffer management of the original printf <
+> Don't implement the buffer management of the original printf
+
 We have to handle the following conversions: cspdiuxX% for our mandatory part.
 
 ## 📍 **Bonus**
