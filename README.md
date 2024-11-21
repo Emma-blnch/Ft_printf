@@ -31,5 +31,5 @@ Once you have your main test it with this command line:
 > cc -Wall -Wextra -Werror *all your .c functions:* *.c main.c -o *executable_name*
 
 If you want to make sure your program works, you can use third party testers like:
-- [https://github.com/xicodomingues/francinette]
-- [https://github.com/Tripouille/printfTester]
+- https://github.com/xicodomingues/francinette
+- https://github.com/Tripouille/printfTester
