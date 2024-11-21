@@ -36,7 +36,8 @@ If you have trouble understanding the subject fully and the new notions like var
 It really helped me understand the subject better and the new notions.
 
 ## ♻️ **Testing**
-I strongly recommand you do your own main function to test your program. *You can check mine to see what it should look like*
+I strongly recommand you do your own main function to test your program. *You can check mine to see what it should look like.*
+
 Once you have your main test it with this command line:
 > cc -Wall -Wextra -Werror *--all your .c functions:--* *.c main.c -o *executable_name*
 
