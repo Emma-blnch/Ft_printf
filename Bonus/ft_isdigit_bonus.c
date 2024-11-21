@@ -1,32 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_isdigit_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eblancha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/18 15:18:19 by eblancha          #+#    #+#             */
-/*   Updated: 2024/11/21 11:46:55 by eblancha         ###   ########.fr       */
+/*   Created: 2024/11/07 09:08:05 by eblancha          #+#    #+#             */
+/*   Updated: 2024/11/19 14:27:38 by eblancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-// function that writes a string
-int	ft_putstr(char *s)
+int	ft_isdigit(int c)
 {
-	int	i;
-
-	if (!s)
-	{
-		write(1, "(null)", 6); // protection if the string is NULL
-		return (6);
-	}
-	i = 0;
-	while (s[i])
-	{
-		write(1, &s[i], 1); // we parse s with our index and write every char
-		i++;
-	}
-	return (i); // we return the number of char we wrote
+	if (c >= '0' && c <= '9')
+		return (1);
+	else
+		return (0);
 }

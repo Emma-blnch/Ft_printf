@@ -6,12 +6,13 @@
 /*   By: eblancha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 15:14:10 by eblancha          #+#    #+#             */
-/*   Updated: 2024/11/18 15:33:29 by eblancha         ###   ########.fr       */
+/*   Updated: 2024/11/21 11:52:37 by eblancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
+// function that counts the number of digits for printf to return
 static size_t	hexa_digits(unsigned int n)
 {
 	size_t	count;
@@ -27,6 +28,7 @@ static size_t	hexa_digits(unsigned int n)
 	return (count);
 }
 
+// function that writes our number in hexadecimal form
 static void	write_hexa(unsigned int nbr, const char format)
 {
 	char	*upper_digits;
@@ -48,6 +50,8 @@ static void	write_hexa(unsigned int nbr, const char format)
 	}
 }
 
+
+// main function that calls our other two to write in hexadecimal and return the length of the number
 int	ft_put_hexa(unsigned int nbr, const char format)
 {
 	if (nbr == 0)

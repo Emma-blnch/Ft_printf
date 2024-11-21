@@ -4,9 +4,7 @@
 int	main(void)
 {
 	char *src;
-	/*void *ptr;
 
-	ptr = 272;*/
 	src = "bonjour la france";
 	ft_printf("my function with d: %d\n", 42);
 	printf("printf : %d\n", 42);
@@ -110,3 +108,6 @@ int	main(void)
 	printf("printf : %%%%%%\n");
 	printf("-------------\n");
 }
+
+// for testing : 
+// cc -Wall -Wextra -Werror ft_printf.c ft_itoa.c ft_putchar.c ft_put_hexa.c ft_putnbr.c ft_putptr.c ft_putstr.c ft_put_unsigned.c ft_strlen.c main.c -o ptf_test

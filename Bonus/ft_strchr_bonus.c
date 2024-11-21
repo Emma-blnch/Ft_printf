@@ -1,32 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_strchr_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eblancha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/18 15:18:19 by eblancha          #+#    #+#             */
-/*   Updated: 2024/11/21 11:46:55 by eblancha         ###   ########.fr       */
+/*   Created: 2024/11/07 11:40:06 by eblancha          #+#    #+#             */
+/*   Updated: 2024/11/19 14:28:07 by eblancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-// function that writes a string
-int	ft_putstr(char *s)
+char	*ft_strchr(const char *s, int c)
 {
 	int	i;
 
-	if (!s)
-	{
-		write(1, "(null)", 6); // protection if the string is NULL
-		return (6);
-	}
 	i = 0;
 	while (s[i])
 	{
-		write(1, &s[i], 1); // we parse s with our index and write every char
+		if (s[i] == (char)c)
+			return ((char *)(s + i));
 		i++;
 	}
-	return (i); // we return the number of char we wrote
+	if (s[i] == (char)c)
+		return ((char *)(s + i));
+	return (NULL);
 }
