@@ -6,7 +6,7 @@
 /*   By: eblancha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 15:12:26 by eblancha          #+#    #+#             */
-/*   Updated: 2024/11/18 15:42:51 by eblancha         ###   ########.fr       */
+/*   Updated: 2024/11/22 11:07:24 by eblancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,10 @@ int		ft_printf(const char *format, ...);
 int		ft_putptr(void *ptr);
 int		ft_put_hexa(unsigned int nbr, const char format);
 int		ft_put_unsigned(unsigned int nb);
-size_t	ft_strlen(const char *s);
 int		ft_putchar(char c);
 int		ft_putnbr(int n);
 int		ft_putstr(char *s);
+size_t	ft_strlen(const char *s);
 char	*ft_itoa(int n);
 
 #endif
