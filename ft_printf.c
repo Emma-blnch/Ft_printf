@@ -6,7 +6,7 @@
 /*   By: eblancha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 15:10:40 by eblancha          #+#    #+#             */
-/*   Updated: 2024/11/21 11:56:20 by eblancha         ###   ########.fr       */
+/*   Updated: 2024/11/25 12:15:49 by eblancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,8 @@ int	ft_printf(const char *format, ...)
 	int		count;
 	va_list	args;
 
+	if (!format)
+		return (-1);
 	va_start(args, format);
 	i = 0;
 	count = 0;
