@@ -106,7 +106,10 @@ int	main(void)
 	printf("printf : %%%c\n", 'x');
 	ft_printf("my function: %%%%%%\n");
 	printf("printf : %%%%%%\n");
+	
 	printf("-------------\n");
+	ft_printf("my function with format = 0: %d\n", ft_printf(0));
+	printf("printf: %d\n", printf(0));
 }
 
 // for testing : 
