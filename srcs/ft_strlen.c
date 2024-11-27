@@ -13,12 +13,12 @@
 #include "ft_printf.h"
 
 // function that returns the size of a string
-size_t	ft_strlen(const char *s)
+size_t	ft_strlen(const char *string)
 {
-	size_t	i;
+	size_t	index;
 
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
+	index = 0;
+	while (string[index])
+		index++;
+	return (index);
 }
