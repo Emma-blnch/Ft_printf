@@ -21,7 +21,7 @@
 # define PRINTF_VALID_FORMATS "cspdiuxX\%"
 
 int		ft_printf(const char *format, ...);
-int		ft_putptr(void *ptr);
+int		ft_putptr(void *pointer);
 int		ft_put_hexa(unsigned int number, const char format);
 int		ft_put_unsigned(unsigned int nb);
 int		ft_putchar(char character);
