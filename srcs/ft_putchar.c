@@ -14,11 +14,11 @@
 
 
 // function that writes a char
-int	ft_putchar(char c)
+int	ft_putchar(char character)
 {
-	int	i;
+	int	length;
 
-	i = 1;
-	write(1, &c, 1); // write the char
-	return (i); // printf return the number of char so we return 1 for our 1 char
+	length = 1;
+	write(1, &character, 1); // write the char
+	return (length); // printf return the number of char so we return 1 for our 1 char
 }
