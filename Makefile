@@ -5,14 +5,14 @@ CC = cc
 CFLAGS = -Wall -Wextra -Werror -I$(INC)
 
 SRCS = ft_printf.c \
-ft_put_unsigned.c \
-ft_putchar.c \
-ft_put_hexa.c \
-ft_putnbr.c \
-ft_putptr.c \
-ft_putstr.c \
-ft_strlen.c \
-ft_itoa.c
+srcs/ft_put_unsigned.c \
+src/ft_putchar.c \
+srcs/ft_put_hexa.c \
+srcs/ft_putnbr.c \
+srcs/ft_putptr.c \
+srcs/ft_putstr.c \
+srcs/ft_strlen.c \
+srcs/ft_itoa.c
 
 OBJS = $(SRCS:.c=.o)
 
