@@ -23,7 +23,7 @@
 int		ft_printf(const char *format, ...);
 int		ft_putptr(void *pointer);
 int		ft_put_hexa(unsigned int number, const char format);
-int		ft_put_unsigned(unsigned int nb);
+int		ft_put_unsigned(unsigned int number);
 int		ft_putchar(char character);
 int		ft_putnbr(int n);
 int		ft_putstr(char *string);
