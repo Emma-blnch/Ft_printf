@@ -5,6 +5,10 @@
 
 This project is about recoding a simplified version of the printf function.
 
+## 📥 **What I learned**
+With this project, I learned how to have **clear names** for variables and functions.
+I tried to name all my functions and variables so anyone could know their purpose *with one look*.
+
 ## ⚙️ **Requirements**
 The function must be written in C. It must compile with clang and the following flags :
 - [x] -Wall
