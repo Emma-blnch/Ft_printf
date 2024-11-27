@@ -25,7 +25,7 @@ I started to do the bonus when my madatory part worked perfectly which is a **BI
 > If you plan to complete the bonus part, think about the implementation of your extra features from the start. This way, you will avoid the pitfalls of a naive approach.
 
 Doing the bonus meant re-doing all my functions so I gave up.
-You can still see part of my code for the bonus, it can give you hints on how to do it. Just check `ft_check_flags_bonus.c`.
+And since I understood the subject perfectly, I felt like I didn't need to do the bonus.
 
 ## 🧠 **New notions**
 If you have trouble understanding the subject fully and the new notions like variadic functions (`va_arg`, `va_list`, `va_start` `va_end`), I highly recommand these:
