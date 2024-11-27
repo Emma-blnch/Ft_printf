@@ -13,37 +13,37 @@
 #include "ft_printf.h"
 
 // function that counts the length of our unsigned
-static size_t	unsigned_count(unsigned int n)
+static size_t	unsigned_count_digits(unsigned int number)
 {
 	size_t	count;
 
 	count = 0;
-	if (n == 0)
+	if (number == 0)
 		return (1);
-	while (n != 0)
+	while (number != 0)
 	{
 		count++;
-		n /= 10;
+		number /= 10;
 	}
 	return (count);
 }
 
 // function that writes unsigned int
-static void	write_unsigned(unsigned int nb)
+static void	write_unsigned(unsigned int number)
 {
-	if (nb >= 10)
-		write_unsigned(nb / 10); // we divide by 10 to write each number (for 12 we write 1 first then 2)
-	ft_putchar((nb % 10) + '0'); // we convert each number to char
+	if (number >= 10)
+		write_unsigned(number / 10); // we divide by 10 to write each number (for 12 we write 1 first then 2)
+	ft_putchar((number % 10) + '0'); // we convert each number to character
 }
 
 // main function that calls our other two to write an unsigned int and return its length
-int	ft_put_unsigned(unsigned int nb)
+int	ft_put_unsigned(unsigned int number)
 {
-	if (nb == 0)
+	if (number == 0)
 	{
 		ft_putchar('0');
 		return (1);
 	}
-	write_unsigned(nb);
-	return (unsigned_count(nb));
+	write_unsigned(number);
+	return (unsigned_count_digits(number));
 }
