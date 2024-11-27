@@ -15,13 +15,13 @@
 // allocate size_total memory for our number and make sure the new string is empty
 static char	*allocation_and_initilization(int len)
 {
-	char	*tmp;
+	char	*result;
 
-	tmp = malloc(sizeof(char) * (len + 1));
-	if (!tmp)
+	result = malloc(sizeof(char) * (len + 1));
+	if (!result)
 		return (NULL);
-	tmp[0] = '0';
-	return (tmp);
+	result[0] = '0';
+	return (result);
 }
 
 // count the total size of our number
