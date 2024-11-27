@@ -16,11 +16,11 @@
 int	ft_putnbr(int n)
 {
 	int		count;
-	char	*nb;
+	char	*number;
 
 	count = 0;
-	nb = ft_itoa(n); // we call itoa to convert int into char string
-	count = ft_putstr(nb); // we write said string
-	free(nb);
+	number = ft_itoa(n); // we call itoa to convert int into char string
+	count = ft_putstr(number); // we write said string
+	free(number);
 	return (count); // we return length of string
 }
