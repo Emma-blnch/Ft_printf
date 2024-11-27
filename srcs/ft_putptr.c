@@ -29,25 +29,25 @@ static size_t	count_digits(unsigned long n)
 }
 
 // function to write the pointer
-static void	write_ptr(unsigned long ptr)
+static void	write_ptr(unsigned long pointer)
 {
 	char	*digits;
 
 	digits = "0123456789abcdef";
-	if (ptr >= 16)
-		write_ptr(ptr / 16);
-	write(1, &digits[ptr % 16], 1);
+	if (pointer >= 16)
+		write_ptr(pointer / 16);
+	write(1, &digits[pointer % 16], 1);
 }
 
 // main function that calls the other two
-int	ft_putptr(void *ptr)
+int	ft_putptr(void *pointer)
 {
-	if (!ptr)
+	if (!pointer)
 	{
 		write(1, "(nil)", 5);
 		return (5);
 	}
 	write(1, "0x", 2);
-	write_ptr((unsigned long)ptr);
-	return (count_digits((unsigned long)ptr) + 2);
+	write_ptr((unsigned long)pointer);
+	return (count_digits((unsigned long)pointer) + 2);
 }
