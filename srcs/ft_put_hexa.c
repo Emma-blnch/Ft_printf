@@ -6,7 +6,7 @@
 /*   By: eblancha <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 15:14:10 by eblancha          #+#    #+#             */
-/*   Updated: 2024/11/21 11:52:37 by eblancha         ###   ########.fr       */
+/*   Updated: 2024/11/27 09:55:47 by eblancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,8 @@ static void	write_hexa_number(unsigned int number, const char format)
 	lower_digits = "0123456789abcdef";
 	if (number >= 16)
 	{
-		write_hexa(number / 16, format);
-		write_hexa(number % 16, format);
+		write_hexa_number(number / 16, format);
+		write_hexa_number(number % 16, format);
 	}
 	else
 	{
