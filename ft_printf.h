@@ -19,9 +19,6 @@
 # include <stdlib.h>
 
 # define PRINTF_VALID_FORMATS "cspdiuxX\%"
-# define PRINTF_VALID_FLAGS " -.*0123456789"
-# define HEXALOWER "0123456789abcdef"
-# define HEXAUPPER "0123456789ABCDEF"
 
 int		ft_printf(const char *format, ...);
 int		ft_putptr(void *ptr);
