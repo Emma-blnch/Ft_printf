@@ -12,8 +12,8 @@
 
 #include "ft_printf.h"
 
-// allocate size_total memoryfor our number and make sure the new string is empty
-static char	*pre_conv(int len)
+// allocate size_total memory for our number and make sure the new string is empty
+static char	*allocation_and_initilization(int len)
 {
 	char	*tmp;
 
@@ -49,23 +49,23 @@ static int	size_total(long nbr)
 char	*ft_itoa(int n)
 {
 	size_t	size;
-	int		i;
+	int		index;
 	char	*result;
-	long	nb;
+	long	number;
 
-	nb = n; // store number into a long
-	size = size_total(nb); // count the total size
-	result = pre_conv(size); // allocate memory
+	number = n; // store number into a long
+	size = size_total(number); // count the total size
+	result = allocation_and_initilization(size); // allocate memory
 	if (!result) // safety if allocation failed
 		return (NULL);
-	if (nb < 0)
-		nb = -nb;
-	i = size - 1; // start at end of the number we converted into a string
-	while (nb != 0) // as long as we don't reach the start of the number
+	if (number < 0)
+		number = -number;
+	index = size - 1; // start at end of the number we converted into a string
+	while (number != 0) // as long as we don't reach the start of the number
 	{
-		result[i] = (nb % 10) + '0'; // we convert the final caracter of our string into a char
-		nb /= 10;
-		i--; // then we do the sam for the one before
+		result[index] = (number % 10) + '0'; // we convert the final caracter of our string into a char
+		number /= 10;
+		index--; // then we do the sam for the one before
 	}
 	if (n < 0)
 		result[0] = '-'; // if it's a negative number we put a minus sign at the start
