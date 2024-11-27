@@ -13,20 +13,20 @@
 #include "ft_printf.h"
 
 // function that writes a string
-int	ft_putstr(char *s)
+int	ft_putstr(char *string)
 {
-	int	i;
+	int	index;
 
-	if (!s)
+	if (!string)
 	{
 		write(1, "(null)", 6); // protection if the string is NULL
 		return (6);
 	}
-	i = 0;
-	while (s[i])
+	index = 0;
+	while (string[index])
 	{
-		write(1, &s[i], 1); // we parse s with our index and write every char
-		i++;
+		write(1, &string[index], 1); // we parse s with our index and write every char
+		index++;
 	}
-	return (i); // we return the number of char we wrote
+	return (index); // we return the number of char we wrote
 }
