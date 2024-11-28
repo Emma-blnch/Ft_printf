@@ -7,9 +7,8 @@ CFLAGS = -Wall -Wextra -Werror -I$(INC)
 SRCS = ft_printf.c \
 srcs/ft_put_unsigned.c \
 src/ft_putchar.c \
-srcs/ft_put_hexa.c \
+srcs/ft_put_hexadecimal.c \
 srcs/ft_putnbr.c \
-srcs/ft_putptr.c \
 srcs/ft_putstr.c \
 srcs/ft_strlen.c \
 srcs/ft_itoa.c
