@@ -31,7 +31,7 @@ I started to do the bonus when my madatory part worked perfectly which is a **BI
 > If you plan to complete the bonus part, think about the implementation of your extra features from the start. This way, you will avoid the pitfalls of a naive approach.
 
 Doing the bonus meant re-doing all my functions so I gave up.
-And since I understood the subject perfectly, I felt like I didn't need to do the bonus.
+And since I understood the subject well, I felt like I didn't need to do the bonus.
 
 ## 🧠 **New notions**
 If you have trouble understanding the subject fully and the new notions like variadic functions (`va_arg`, `va_list`, `va_start` `va_end`), I highly recommand these:
