@@ -13,7 +13,7 @@
 #include "ft_printf.h"
 
 // function that counts the number of digits for printf to return
-static size_t	count_hexa_digits(unsigned int number)
+static size_t	count_base16_digits(unsigned int number)
 {
 	size_t	count;
 
@@ -28,26 +28,22 @@ static size_t	count_hexa_digits(unsigned int number)
 	return (count);
 }
 
-// function that writes our number in hexadecimal form
-static void	write_hexa_number(unsigned int number, const char format)
+// function that writes our number in hexadecimal form (with "0x" if its a pointer)
+static void	write_base16(unsigned long number, const char format, int prefix)
 {
 	char	*upper_digits;
 	char	*lower_digits;
 
 	upper_digits = "0123456789ABCDEF";
 	lower_digits = "0123456789abcdef";
+	if (prefix != 0)
+		write(1, "0x", 2);
 	if (number >= 16)
-	{
-		write_hexa_number(number / 16, format);
-		write_hexa_number(number % 16, format);
-	}
-	else
-	{
-		if (format == 'x')
-			write(1, &lower_digits[number % 16], 1);
-		if (format == 'X')
-			write(1, &upper_digits[number % 16], 1);
-	}
+		write_base16(number / 16, format, 0);
+	if (format == 'x')
+		write(1, &lower_digits[number % 16], 1);
+	if (format == 'X')
+		write(1, &upper_digits[number % 16], 1);
 }
 
 
@@ -59,6 +55,17 @@ int	ft_put_hexa(unsigned int number, const char format)
 		write(1, "0", 1);
 		return (1);
 	}
-	write_hexa_number(number, format);
-	return (count_hexa_digits(number));
+	write_base16(number, format, 0);
+	return (count_base16_digits(number));
+}
+
+int	ft_putptr(void *pointer)
+{
+	if (!pointer)
+	{
+		write(1, "(nil)", 5);
+		return (5);
+	}
+	write_base16((unsigned long)pointer, 'x', 1);
+	return (count_base16_digits((unsigned long)pointer) + 2);
 }
