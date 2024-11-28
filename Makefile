@@ -1,4 +1,4 @@
-$(NAME) = libftprintf.a
+NAME = libftprintf.a
 
 CC = cc
 
