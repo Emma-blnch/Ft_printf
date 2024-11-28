@@ -9,6 +9,8 @@ This project is about recoding a simplified version of the printf function.
 With this project, I learned how to have **clear names** for variables and functions.
 I tried to name all my functions and variables so anyone could know their purpose *with one look*.
 
+I also learned to not repeat myself. At first I had one more file because I separated the functions for hexadecimal numbers and for pointers but I realized it's the same logic! So it really taught me to be more concise and to check if I repeat myself.
+
 ## ⚙️ **Requirements**
 The function must be written in C. It must compile with clang and the following flags :
 - [x] -Wall
