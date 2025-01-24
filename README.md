@@ -14,4 +14,3 @@ With this project, I implemented my first clean code concepts:
 ## ⚙️ **Technical skills I acquired**
 - [x] Dynamic management of function parameters
 - [x] Implementation of base conversion (decimal, hexadecimal)
-- [x] Compiling and integrating a static library
